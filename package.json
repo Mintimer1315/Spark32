@@ -1,0 +1,40 @@
+{
+  "name": "spark32",
+  "productName": "Spark32",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Обучающее приложение по ESP32",
+  "author": "Mintimer1315",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mintimer1315/Spark32.git"
+  },
+  "homepage": "https://mintimer1315.github.io/Spark32/",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "concurrently -k \"vite\" \"wait-on http://127.0.0.1:5173 && electron .\"",
+    "dev:web": "vite",
+    "build": "vite build",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.4.0",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.545.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@types/three": "^0.180.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "concurrently": "^9.2.1",
+    "electron": "^38.4.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12",
+    "wait-on": "^9.0.1"
+  }
+}
